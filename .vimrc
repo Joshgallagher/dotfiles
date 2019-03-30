@@ -181,6 +181,7 @@ colorscheme nord
 
 filetype plugin on
 filetype indent on
+set ttymouse=xterm2
 set mouse=a
 set pastetoggle=<F3>
 set autochdir
