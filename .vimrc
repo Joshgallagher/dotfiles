@@ -9,10 +9,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-fugitive'
 Plug 'shime/vim-livedown'
-if v:version >= 704
-    Plug 'honza/vim-snippets'
-    Plug 'SirVer/ultisnips'
-endif
 
 "+--- UI ---+
 Plug 'Yggdroot/indentLine'
