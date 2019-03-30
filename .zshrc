@@ -10,7 +10,9 @@ export ZSH="/Users/josh/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="spaceship"
 
+# Set Spaceship theme defaults
 SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_BATTERY_SHOW=false
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
