@@ -1,0 +1,20 @@
+# Git
+alias gs="git status"
+alias gl="git log"
+alias gcom="git checkout master"
+alias gco="git checkout "
+alias gcb="git checkout -b "
+alias gbd="git branch -D "
+alias gaa="git add ."
+alias gc="git commit -m "
+alias gp="git push"
+alias nah="git reset --hard && git clean -df"
+
+# Node n
+alias ni='n $(cat .nvmrc)'
+alias nu='n use $(cat .nvmrc)'
+
+#Docker
+alias d="docker"
+alias dc="docker-compose"
+
