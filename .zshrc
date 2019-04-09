@@ -70,6 +70,8 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
+  docker
+  docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -116,6 +118,10 @@ prompt_context() {
   fi
 }
 
-#Setup Java version managaer
+# Setup Java version managaer
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+# Load zsh completion system
+autoload -Uz compinit
+compinit
