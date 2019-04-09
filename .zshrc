@@ -67,11 +67,11 @@ SPACESHIP_BATTERY_SHOW=false
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  docker
-  docker-compose
+    git
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    docker
+    docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,9 +113,14 @@ source ~/.aliases
 
 # Redefine prompt_context depending on terminal env
 prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-  fi
+    if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+        prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+    fi
+}
+
+# Create a folder and move into it in one command
+function mkcd() {
+    mkdir -p "$@" && cd "$_";
 }
 
 # Setup Java version managaer
