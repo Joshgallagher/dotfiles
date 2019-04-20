@@ -110,7 +110,9 @@ esac
 # Aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+
 source ~/.aliases
+source ~/.config/up/up.sh
 
 # Redefine prompt_context depending on terminal env
 prompt_context() {
