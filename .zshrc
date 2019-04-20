@@ -111,6 +111,7 @@ esac
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
+source ~/.helpers
 source ~/.aliases
 source ~/.config/up/up.sh
 
@@ -121,11 +122,6 @@ prompt_context() {
     fi
 }
 
-# Create a folder and move into it in one command
-function mkcd() {
-    mkdir -p "$@" && cd "$_";
-}
-
 # Setup Java version managaer
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
@@ -133,3 +129,4 @@ eval "$(jenv init -)"
 # Load zsh completion system
 autoload -Uz compinit
 compinit
+

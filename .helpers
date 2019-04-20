@@ -1,0 +1,5 @@
+# Make and change into a directory
+function mkcd() {
+    mkdir -p "$@" && cd "$_";
+}
+
