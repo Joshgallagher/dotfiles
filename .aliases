@@ -17,4 +17,5 @@ alias nu='n use $(cat .nvmrc)'
 #Docker
 alias d="docker"
 alias dc="docker-compose"
+alias dm="docker-machine"
 
