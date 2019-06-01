@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.composer/vendor/bin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/josh/.oh-my-zsh"
@@ -121,10 +121,6 @@ prompt_context() {
         prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
     fi
 }
-
-# Setup Java version managaer
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
 
 # Load zsh completion system
 autoload -Uz compinit
